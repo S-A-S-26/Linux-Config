@@ -1,6 +1,7 @@
 format = """
 [](#9A348E)\
 $os\
+[ ](fg:#FFFFFF bg:#9A348E)\
 $username\
 [](bg:#DA627D fg:#9A348E)\
 $directory\
@@ -27,6 +28,9 @@ $time\
 [ ](fg:#33658A)\
 """
 
+# [ ](fg:#FFFFFF bg:#9A348E)\
+# [](fg:#FFFFFF bg:#9A348E)\
+# [\u00A0](fg:#9A348E bg:#9A348E)\
 # Disable the blank line at the start of the prompt
 # add_newline = false
 
@@ -41,18 +45,18 @@ disabled = false
 
 # An alternative to the username module which displays a symbol that
 # represents the current operating system
-# [os]
-# style = "bg:#9A348E"
-# disabled = true # Disabled by default
-
 [os]
-disabled = false
 style = "bg:#9A348E"
+disabled = true # Disabled by default
+
+# [os]
+# disabled = false
+# style = "bg:#9A348E"
 # style = "bg:color_orange fg:color_fg0"
 
 [os.symbols]
 Windows = "󰍲"
-Ubuntu = " "
+Ubuntu = ""
 SUSE = ""
 Raspbian = "󰐿"
 Mint = "󰣭"
