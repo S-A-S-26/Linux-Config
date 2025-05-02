@@ -125,3 +125,7 @@ git config --global branch.sort -committerdate
 
 alias tmux='tmux -u'
 alias btop='btop --utf-force'
+cdf() {
+  local dir
+  dir=$(find . -type d | fzf) && cd "$dir"
+}
